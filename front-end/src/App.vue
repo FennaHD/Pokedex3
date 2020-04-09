@@ -34,7 +34,7 @@
                   <i class="fab fa-instagram fa-lg black-text mr-md-5 mr-sm-5 mr-4 fa-2x"> </i>
                 </a>
                 <!-- Github -->
-                <a class="gb-ic" href="https://github.com/FennaHD/PokedexApp2" target="_blank">
+                <a class="gb-ic" href="https://github.com/FennaHD/Pokedex3" target="_blank">
                   <i class="fab fa-github fa-lg black-text mr-md-5 mr-sm-5 mr-4 fa-2x"></i>
                 </a>
               </div>
