@@ -238,7 +238,7 @@ export default {
     },
     async updatePokemon() {
       try {
-        let types = [this.primary_type, this.secondary_type];
+        let types = [this.findPokemon.types[0], this.findPokemon.types[1]];
         await axios.put('/api/pokemons/' + this.findPokemon._id, {
           name: this.findPokemon.name,
           feet: this.findPokemon.feet,

@@ -31,7 +31,6 @@ export default {
   },
   created() {
     this.getPokemons();
-    console.log("created");
   },
   components: {
     PokedexComponent
@@ -40,7 +39,6 @@ export default {
     async getPokemons() {
       try {
         let response = await axios.get('/api/pokemons');
-        console.log(response.data);
         this.$root.$data.pokemons = response.data;
       } catch(error) {
         console.log(error);
