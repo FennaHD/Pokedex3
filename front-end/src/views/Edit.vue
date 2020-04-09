@@ -3,9 +3,6 @@
     <div class="container">
       <div class="row">
         <div class="col">
-          <div class="row">
-            <button @click="addBunch">Add a bunch</button>
-          </div>
           <div class="row add-section">
             <div class="row">
               <h3>Add Pokemon</h3>
