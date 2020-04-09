@@ -14,16 +14,38 @@
 <script>
 // @ is an alias to /src
 import PokedexComponent from '../components/PokedexComponent.vue'
+import axios from 'axios'
 
 export default {
   name: 'Pokedex',
   data() {
     return {
       searchText: '',
+      name: 'Bulbasaur',
+      feet: '2',
+      inches: "04",
+      weight: "15.2",
+      little_image: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1.png",
+      large_image: "https://assets.pokemon.com/assets/cms2/img/pokedex/full/001.png"
     }
+  },
+  created() {
+    this.getPokemons();
+    console.log("created");
   },
   components: {
     PokedexComponent
+  },
+  methods: {
+    async getPokemons() {
+      try {
+        let response = await axios.get('/api/pokemons');
+        console.log(response.data);
+        this.$root.$data.pokemons = response.data;
+      } catch(error) {
+        console.log(error);
+      }
+    }
   },
   computed: {
     pokemons() {

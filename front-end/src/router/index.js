@@ -3,7 +3,7 @@ import VueRouter from 'vue-router'
 import Home from '../views/Home.vue'
 import Pokedex from '../views/Pokedex.vue'
 import ByType from '../views/ByType.vue'
-import Favorites from '../views/Favorites.vue'
+import Edit from '../views/Edit.vue'
 
 Vue.use(VueRouter)
 
@@ -24,9 +24,9 @@ const routes = [
     component: ByType
   },
   {
-    path: '/favorites',
-    name: 'Favorites',
-    component: Favorites
+    path: '/edit',
+    name: 'Edit',
+    component: Edit
   }
 ]
 

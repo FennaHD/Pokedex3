@@ -4,7 +4,7 @@
       <router-link to="/">Home</router-link>
       <router-link to="/pokedex">Pokedex</router-link>
       <router-link to="/bytype">By Type</router-link>
-      <router-link to="/favorites">Favorites</router-link>
+      <router-link to="/edit">Edit</router-link>
     </nav>
     <router-view/>
 
